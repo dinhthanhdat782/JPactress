@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffc7c7; /* Nền hồng cho toàn bộ trang */
+  height: 100vh;
+}
+
+/* Logo ở góc trên bên trái */
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Đảm bảo sidebar trái và phải có cùng chiều rộng */
+  height: 100vh; /* Chiều cao container là 100% chiều cao của viewport */
+}
+
+/* Căn giữa sidebar trái */
+.sidebar-left, .sidebar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 100%; /* Đảm bảo chiều rộng sidebar đều nhau */
+  background-color: transparent;
+  align-self: center; /* Căn giữa theo chiều dọc */
+  margin-left: 0px;
+}
+
+/* Căn giữa sidebar phải */
+.sidebar-right {
+  margin-right: 0px;
+}
+
+/* Vùng chính giữa */
+.main-content {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 40px); /* Loại bỏ màu nền */
+  background-color: transparent; /* Có thể thêm màu nền nếu cần */
+}
+
+/* Hình ảnh trong main content */
+.main-content img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+/* Hình ảnh trong sidebar */
+.sidebar-left img, .sidebar-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.sidebar-left img:hover, .sidebar-right img:hover {
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Định dạng responsive cho màn hình lớn */
+@media (min-width: 1920px) {
+  .container {
+      grid-template-columns: 1fr 2fr 1fr; /* Cột chính giữa lớn hơn, sidebar giữ nguyên */
+  }
+
+  .sidebar-left, .sidebar-right {
+      width: 15vw;
+      height: 20vh;
+  }
+}
+
+/* Định dạng responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .container {
+      grid-template-columns: 1fr; /* Chuyển sang một cột */
+  }
+
+  .sidebar-left, .sidebar-right {
+      width: 100%;
+      height: auto; /* Tự động điều chỉnh chiều cao */
+  }
+
+  .main-content {
+      height: auto; /* Cho phép main content điều chỉnh tự nhiên */
+  }
+}
