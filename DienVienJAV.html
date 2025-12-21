@@ -1060,9 +1060,19 @@
     <div class="container-fluid py-3">
       <div class="my-2 d-lg-none"></div>
       <div class="d-flex flex-column"></div>
-      <div class="d-flex justify-content-between align-items-start mb-2">
-        <div class="d-flex flex-column">
-          <h2 class="h3 font-weight-light mb-0">Diễn Viên JAV</h2>
+      <div class="d-flex justify-content-between align-items-center mb-3 gap-2 heading-bar flex-wrap">
+        <h2 class="h3 font-weight-light mb-0">Diễn Viên JAV</h2>
+        <div class="search-wrapper">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" class="search-icon">
+            <path d="M15.5 14h-.79l-.28-.27a6 6 0 10-.71.71l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-5.5 0A4.5 4.5 0 1114.5 9.5 4.5 4.5 0 0110 14z" fill="currentColor"/>
+          </svg>
+          <input
+            type="search"
+            id="searchActor"
+            class="form-control bg-transparent border-0 text-light p-0"
+            placeholder="Tìm kiếm diễn viên..."
+            aria-label="Tìm kiếm diễn viên"
+          />
         </div>
       </div>
       <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-6 row-cols-xxl-12 g-2 mb-3 text-center videos">
@@ -1070,7 +1080,7 @@
         
         <div class="col text-center" >
           <div class="card bg-dark h-100 hover-shadow">
-            <img class="card-img rounded" src="https://raw.githubusercontent.com/dinhthanhdat782/JPactress/main/DienVienJAV/HikariSena.jpg" loading="lazy" https:="" media.discordapp.net="" attachments="">
+            <img class="card-img rounded" src="DienVienJAV/HikariSena.jpg" loading="lazy" https:="" media.discordapp.net="" attachments="">
             <div class="card-img-overlay d-flex justify-content-end"></div>
             <div class="card-body px-0 py-1">
               <h3 class="card-title h6 text-truncate mb-0">
@@ -1081,7 +1091,7 @@
         </div>
         <div class="col text-center" >
           <div class="card bg-dark h-100 hover-shadow">
-            <img class="card-img rounded" src="https://cdn.glitch.global/b577cdfd-25f4-4750-8f6d-52494681ceed/HikaruNagi.jpg?v=1718297358453" loading="lazy" https:="" media.discordapp.net="" attachments="">
+            <img class="card-img rounded" src="DienVienJAV/HikaruNagi.jpg" loading="lazy" https:="" media.discordapp.net="" attachments="">
             <div class="card-img-overlay d-flex justify-content-end"></div>
             <div class="card-body px-0 py-1">
               <h3 class="card-title h6 text-truncate mb-0">
@@ -1209,30 +1219,6 @@
             <div class="card-body px-0 py-1">
               <h3 class="card-title h6 text-truncate mb-0">
                 <a class="stretched-link link-light font-weight-light" href="https://missav.ws/dm305/en/actresses/Ichika%20Matsumoto?filters=individual">Ichika Matsumoto
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col text-center" >
-          <div class="card bg-dark h-100 hover-shadow">
-            <img class="card-img rounded" src="https://raw.githubusercontent.com/dinhthanhdat782/JPactress/main/DienVienJAV/Yuko%20Ono.jpg" loading="lazy">
-            <div class="card-img-overlay d-flex justify-content-end"></div>
-            <div class="card-body px-0 py-1">
-              <h3 class="card-title h6 text-truncate mb-0">
-                <a class="stretched-link link-light font-weight-light" href="https://missav.ws/dm19/en/actresses/Yuko%20Ono?filters=individual">Yuko Ono
-                </a>
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col text-center" >
-          <div class="card bg-dark h-100 hover-shadow">
-            <img class="card-img rounded" src="https://raw.githubusercontent.com/dinhthanhdat782/JPactress/main/DienVienJAV/Seto%20Kanna.jpg" loading="lazy">
-            <div class="card-img-overlay d-flex justify-content-end"></div>
-            <div class="card-body px-0 py-1">
-              <h3 class="card-title h6 text-truncate mb-0">
-                <a class="stretched-link link-light font-weight-light" href="https://missav.ws/en/actresses/Seto%20Kanna?filters=individual">Seto Kanna
                 </a>
               </h3>
             </div>
@@ -1426,7 +1412,7 @@
             <div class="card-img-overlay d-flex justify-content-end"></div>
             <div class="card-body px-0 py-1">
               <h3 class="card-title h6 text-truncate mb-0">
-                <a class="stretched-link link-light font-weight-light" href="https://missav.ws/dm78/en/actresses/Mary%20Tachibana?filters=individual"> Tachibana Mary </a>
+                <a class="stretched-link link-light font-weight-light" href="https://missav.ws/dm30/en/actresses/Ishikawa%20Mio?filters=individual"> Tachibana Mary </a>
               </h3>
             </div>
           </div>
@@ -1437,7 +1423,7 @@
             <div class="card-img-overlay d-flex justify-content-end"></div>
             <div class="card-body px-0 py-1">
               <h3 class="card-title h6 text-truncate mb-0">
-                <a class="stretched-link link-light font-weight-light" href="https://missav.ws/dm31/en/actresses/Koto%20Sakura?filters=individual"> Sakura Kurumi </a>
+                <a class="stretched-link link-light font-weight-light" href="https://missav.ws/dm30/en/actresses/Ishikawa%20Mio?filters=individual"> Sakura Kurumi </a>
               </h3>
             </div>
           </div>
@@ -1573,6 +1559,33 @@
           document.getElementById("shownList").appendChild(li);
         }
     </script>
+    <script>
+  // Tìm ô input và tất cả các thẻ diễn viên
+  const searchInput = document.getElementById("searchActor");
+  const actorCards = document.querySelectorAll(".videos .col");
+
+  // Hàm chuẩn hóa chuỗi để so khớp không phân biệt hoa/thường
+  const normalize = (str) => str.toLowerCase().trim();
+
+  // Lọc theo tên khi gõ
+  searchInput.addEventListener("input", (e) => {
+    const term = normalize(e.target.value);
+    actorCards.forEach((card) => {
+      const name = normalize(
+        card.querySelector(".card-title a")?.innerText || ""
+      );
+      card.style.display = name.includes(term) ? "" : "none";
+    });
+  });
+
+  // Nhấn Esc để xóa nhanh ô tìm kiếm
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      searchInput.value = "";
+      searchInput.dispatchEvent(new Event("input"));
+    }
+  });
+</script>
     <iframe height="1" width="1" style="border: none; visibility: hidden;"></iframe>
     <iframe height="1" width="1" style="border: none; visibility: hidden;"></iframe>
     <iframe height="1" width="1" style="border: none; visibility: hidden;"></iframe>
