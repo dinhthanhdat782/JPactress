@@ -18242,3 +18242,9 @@ select.select-initialized {
 .switch-to.mdb-jquery {
   background-position: 0 -40px;
 }
+.videos .card-img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  height: auto;
+}
